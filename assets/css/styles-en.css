@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+body{
+    direction: ltr;
+}
+
+
 html {
     scroll-behavior: smooth;
 
@@ -200,6 +205,10 @@ nav .lang-container img {
     color: #FFFFFF;
     font-weight: 500;
     outline: none;
+}
+
+.navbar .lists .nav-item.trans {
+    display: none;
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -624,17 +633,33 @@ nav .lang-container img {
 
 /* Translation mobile and tab views */
 @media(max-width:912px){
+    nav .nav-links-container {
+    display: flex;
+    justify-content: flex-start;
+}
     nav .lang-container button{
         display: none;
     }
 
     .navbar .navbar-nav {
-        height: 270PX;
-        margin-right: -57px;
+        /* height: 270PX; */
+        margin-left: 25px;
     }
 
-    .navbar .navbar-nav .lists {
+    .navbar .navbar-nav .lists,
+    .navbar .lists .nav-item.trans {
         display: block;
+    }
+
+    .navbar .lists .nav-item.trans img{
+        width: 20px;
+        position: absolute;
+        top: 12px;
+        right: 10px;
+    }
+
+    .lang-list {
+        /* display: none; */
     }
 
     .navbar .navbar-nav .lists li{
@@ -642,8 +667,9 @@ nav .lang-container img {
     }
 
     .navbar .navbar-nav .lists li:last-child{
-        width: 64px;
-        border-bottom: 1px solid white;
+        /* width: 64px; */
+        /* border-bottom: 1px solid white; */
+        position: relative;
     }
 
     nav .lang-container ul {
@@ -657,7 +683,7 @@ nav .lang-container img {
         font-size: 16px;
         margin-right: 2px;
         background-image: none;
-        display: block;
+        display: none;
     }
 }
 
@@ -670,3 +696,7 @@ nav .lang-container img {
     color: white !important;
     background-color: #0a2997;
 }
+
+
+
+

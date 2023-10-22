@@ -2,6 +2,7 @@
 *{
     box-sizing: border-box;
 }
+
 body{
     direction: rtl;
 }
@@ -103,9 +104,16 @@ button.buttons-style {
 }
 
 @media(max-width:912px) {
-    .nav-container nav .logo {
-        height: 25px;
-    }
+nav .nav-links-container {
+    justify-content: flex-start !important;
+    margin-right: -83px;
+
+}
+
+
+.nav-container nav .logo {
+    height: 25px;
+}
 }
 
 .nav-container nav button.navbar-toggler {
@@ -136,7 +144,7 @@ button.buttons-style {
 }
 
 .navbar .navbar-nav .lists li:last-child{
-    margin-right: -3px;
+    margin-right: 7px;
     position: relative;
 }
 
@@ -174,7 +182,7 @@ nav .lang-container ul {
     display: none;
 }
 
-nav .lang-container ul.show {
+nav .lang-container ul.show{
     display: block;
 }
 
@@ -208,12 +216,12 @@ nav .lang-container ul #arabic img {
 }
 
 .navbar .dropdown-toggle::after {
-    border: none;
+    /* border: none;
     content: "\f107";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     vertical-align: middle;
-    margin-left: 8px;
+    margin-left: 8px; */
 }
 
 .navbar .navbar-nav .nav-link {
@@ -228,6 +236,10 @@ nav .lang-container ul #arabic img {
 .navbar .navbar-nav .nav-link.active {
     /* color: var(--primary); */
     color: var(--primary-2);
+}
+
+.navbar .lists .nav-item.trans{
+    display: none;
 }
 
 @media (max-width: 991.98px) {
@@ -644,23 +656,26 @@ nav .lang-container ul #arabic img {
         display: none;
     }
 
+.navbar .lists .nav-item.trans {
+    display: block;
+}
     .navbar .navbar-nav {
-        height: 270PX;
+        /* height: 270PX; */
         width: 140px;
     }
 
     .navbar .navbar-nav .lists {
         display: block;
-        margin-right: 30px;
+        margin-right: 26px;
 
     }
 
     .navbar .navbar-nav .lists li:last-child::after{
-        width: 66px;
+        /* width: 66px;
         border-bottom: 1px solid white;
         content: "";
         position: absolute;
-        left: -20px;
+        left: -20px; */
 }
 
     nav .lang-container ul {
@@ -674,11 +689,18 @@ nav .lang-container ul #arabic img {
         font-size: 16px;
         margin-right: 2px;
         background-image: none;
-        display: block;
+        display: none;
     }
 
     nav .lang-container ul #arabic span{
         margin-right: 18px;
+    }
+
+      .navbar .lists .nav-item.trans img{
+        width: 20px;
+        position: absolute;
+        top: 12px;
+        right: 100px;
     }
 }
 
