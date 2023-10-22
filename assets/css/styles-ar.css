@@ -168,60 +168,12 @@ nav .lang-container button {
     cursor: pointer;
 }
 
-nav .lang-container ul {
-    list-style: none;
-    font-size: 13px;
-    position: absolute;
-    background-image: linear-gradient(to right,var(--primary),var(--primary-2));
-    width: 100px;
-    border-radius: 5px;
-    padding: 20px;
-    top: 54px;
-    right: -16px;
-    height: 87px;
-    display: none;
-}
-
-nav .lang-container ul.show{
-    display: block;
-}
-
-nav .lang-container ul li{
-    color: white;
-    display: flex;
-    cursor: pointer;
-    margin-bottom: 10px;
-    margin-right: -3px;
-}
-
-nav .lang-container ul li:last-child{
-        margin-right: 5px;
-
-}
-
-nav .lang-container ul li span{
-    margin-right: 10px;
-}
-
-nav .lang-container ul #arabic span{
-    margin-right: 15px;
-}
-
 nav .lang-container img {
     width: 20px;
 }
 
 nav .lang-container ul #arabic img {
     margin-right: -8px;
-}
-
-.navbar .dropdown-toggle::after {
-    /* border: none;
-    content: "\f107";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    vertical-align: middle;
-    margin-left: 8px; */
 }
 
 .navbar .navbar-nav .nav-link {
@@ -243,11 +195,6 @@ nav .lang-container ul #arabic img {
 }
 
 @media (max-width: 991.98px) {
-    .navbar .navbar-nav {
-        /* background: var(--dark);
-        padding-left: 40px;
-        text-align: end; */
-    }
 
     .navbar .navbar-nav .nav-link {
         padding: 10px 0;
@@ -330,20 +277,6 @@ nav .lang-container ul #arabic img {
     }
 }
 
-/* .page-header {
-    padding-top: 12rem;
-    padding-bottom: 6rem;
-    background: linear-gradient(rgba(0, 29, 35, .8), rgba(0, 29, 35, .8)), url(../img/carousel-1.jpg) center center no-repeat;
-    background-size: cover;
-}
-
-.page-header .breadcrumb-item+.breadcrumb-item::before {
-    color: #999999;
-} */
-
-
-
-
 /*** About ***/
 
 .about h1{
@@ -358,6 +291,11 @@ nav .lang-container ul #arabic img {
 }
 .about .images-container img:last-child{
     padding: 5px;
+}
+
+.buttons-container a:last-child:hover {
+    color: white !important;
+    background-color: #0a2997;
 }
 
 @media(max-width:768px){
@@ -379,10 +317,6 @@ nav .lang-container ul #arabic img {
     .about .buttons-container a {
         flex-basis: 45%;
     }
-
-    .about .images-container{
-        /* width: 100% !important; */
-    }
   
 }
 
@@ -402,9 +336,6 @@ nav .lang-container ul #arabic img {
         height: 350px !important;
         padding-right: 0!important;
     }
-    /* .about .images-container img:last-child{
-        right: 0px;
-    } */
 }
 
 /*** Reviews ***/
@@ -660,7 +591,6 @@ nav .lang-container ul #arabic img {
     display: block;
 }
     .navbar .navbar-nav {
-        /* height: 270PX; */
         width: 140px;
     }
 
@@ -668,28 +598,6 @@ nav .lang-container ul #arabic img {
         display: block;
         margin-right: 26px;
 
-    }
-
-    .navbar .navbar-nav .lists li:last-child::after{
-        /* width: 66px;
-        border-bottom: 1px solid white;
-        content: "";
-        position: absolute;
-        left: -20px; */
-}
-
-    nav .lang-container ul {
-        list-style: none;
-        position: absolute;
-        width: 100px;
-        padding: 26px;
-        top: 10px;
-        right: -90px;
-        height: 100px;
-        font-size: 16px;
-        margin-right: 2px;
-        background-image: none;
-        display: none;
     }
 
     nav .lang-container ul #arabic span{
@@ -707,7 +615,3 @@ nav .lang-container ul #arabic img {
 
 
 
-.buttons-container a:last-child:hover {
-    color: white !important;
-    background-color: #0a2997;
-}

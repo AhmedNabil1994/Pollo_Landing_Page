@@ -107,6 +107,7 @@ button.buttons-style {
         height: 25px;
     }
 }
+
 .nav-container nav button.navbar-toggler {
     margin-left: 15px ;
 
@@ -142,50 +143,6 @@ nav .lang-container button {
     cursor: pointer;
 }
 
-nav .lang-container ul {
-    list-style: none;
-    font-size: 13px;
-    position: absolute;
-    background-image: linear-gradient(to right,var(--primary),var(--primary-2));
-    width: 100px;
-    border-radius: 5px;
-    padding: 20px;
-    top: 54px;
-    right: -16px;
-    height: 87px;
-    display: none;
-}
-
-nav .lang-container ul.show {
-    display: block;
-}
-
-nav .lang-container ul li{
-    color: white;
-    display: flex;
-    cursor: pointer;
-    margin-bottom: 10px;
-    /* margin-right: 2px; */
-    margin-left: -6px;
-
-}
-
-nav .lang-container ul li span{
-    /* border: 2px solid white;
-    border-radius: 5px;
-    padding: 3px;
-    width: 30px; */
-}
-
-nav .lang-container ul li:last-child{
-        margin-right: 5px;
-
-}
-
-nav .lang-container ul li span{
-    margin-left: 10px;
-}
-
 nav .lang-container img {
     width: 20px;
 }
@@ -211,21 +168,13 @@ nav .lang-container img {
     display: none;
 }
 
+
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    /* color: var(--primary); */
     color: var(--primary-2);
 }
 
 @media (max-width: 991.98px) {
-    .navbar .navbar-nav {
-        /* margin-top: 10px; */
-        /* border-top: 1px solid rgba(0, 0, 0, .07); */
-        /* background: var(--dark); */
-        /* padding-left: 40px !important; */
-
-    }
-
     .navbar .navbar-nav .nav-link {
         padding: 10px 0;
     }
@@ -249,27 +198,6 @@ nav .lang-container img {
         opacity: 1;
     }
 }
-
-/* @media (max-width: 819px) {
-    button.navbar-toggler {
-        display: block;   
-    }
-    .nav-links-container {
-        display: none;   
-    }
- 
-}
-
-@media (min-width: 820px) {
-    button.navbar-toggler {
-        display: none;
-    }
-    .nav-links-container {
-        display: block;   
-    }
- 
-} */
-
 
 /*** Carousel Header ***/
 .carousel-caption {
@@ -327,20 +255,6 @@ nav .lang-container img {
     }
 }
 
-/* .page-header {
-    padding-top: 12rem;
-    padding-bottom: 6rem;
-    background: linear-gradient(rgba(0, 29, 35, .8), rgba(0, 29, 35, .8)), url(../img/carousel-1.jpg) center center no-repeat;
-    background-size: cover;
-}
-
-.page-header .breadcrumb-item+.breadcrumb-item::before {
-    color: #999999;
-} */
-
-
-
-
 /*** About ***/
 
 .about h1{
@@ -355,6 +269,11 @@ nav .lang-container img {
 }
 .about .images-container img:last-child{
     padding: 5px;
+}
+
+.buttons-container a:last-child:hover {
+    color: white !important;
+    background-color: #0a2997;
 }
 
 @media(max-width:768px){
@@ -376,11 +295,6 @@ nav .lang-container img {
     .about .buttons-container a {
         flex-basis: 45%;
     }
-
-    .about .images-container{
-        /* width: 100% !important; */
-    }
-  
 }
 
 @media(max-width:913px){
@@ -598,8 +512,6 @@ nav .lang-container img {
 }
 
 /* Scrolling button */
-
-
 .back-to-top-button {
   background-image: linear-gradient(to right , var(--primary), var(--primary-2));
   color: white;  
@@ -642,7 +554,6 @@ nav .lang-container img {
     }
 
     .navbar .navbar-nav {
-        /* height: 270PX; */
         margin-left: 25px;
     }
 
@@ -658,44 +569,19 @@ nav .lang-container img {
         right: 10px;
     }
 
-    .lang-list {
-        /* display: none; */
-    }
-
     .navbar .navbar-nav .lists li{
         margin-bottom: -10px
     }
 
     .navbar .navbar-nav .lists li:last-child{
-        /* width: 64px; */
-        /* border-bottom: 1px solid white; */
         position: relative;
     }
-
-    nav .lang-container ul {
-        list-style: none;
-        position: absolute;
-        width: 100px;
-        padding: 26px;
-        top: 10px;
-        right: 23px;
-        height: 100px;
-        font-size: 16px;
-        margin-right: 2px;
-        background-image: none;
-        display: none;
-    }
 }
 
 
 
 
 
-
-.buttons-container a:last-child:hover {
-    color: white !important;
-    background-color: #0a2997;
-}
 
 
 

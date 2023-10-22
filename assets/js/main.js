@@ -52,19 +52,12 @@
     
 })(jQuery);
 
-// Translation popup
-// document.getElementById("lang-button").addEventListener("click", ()=>{
-//     document.querySelector(".lang-list").classList.toggle("show");
-// })
-
-
 window.addEventListener("load", function() {
   let imageFullScreen = document.getElementById("lang-image");
   let imageMobile = document.querySelector(".lang-image");
   let imageElement = document.getElementById("lang-image");
   let transTextMobile = document.querySelector(".trans-text");
 
-  console.log(imageElement)
     if($('body').css('direction') == 'ltr'){
         imageFullScreen.src = "../assets/img/egypt.png"     
         imageMobile.src = "../assets/img/egypt.png"     
